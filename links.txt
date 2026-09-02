@@ -1,1 +1,28 @@
 https://github.com/tusharnankani/ToDoList
+
+
+先下載套件：
+套件：(如果要從github弄下來)
+express
+ejs
+pg
+dotenv
+--save--dev nodemon
+
+建立MVC架構
+controllers/
+models/
+routers/
+utilities/
+views/
+    layouts/
+    repair/
+    account/
+public/
+    css/
+    js/
+    images/
+database/
+.env
+app.js
+package.json
