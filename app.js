@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 app.set('view engine', 'ejs');
+app.use(express.static('public')); // 設定靜態檔案資料夾
 const PORT = process.env.PORT || 3000;
 
 app.get('/', (req, res) => {
