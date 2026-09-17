@@ -1,11 +1,11 @@
 const express = require('express');
 const app = express();
-
+app.set('view engine', 'ejs');
 const PORT = process.env.PORT || 3000;
 
 app.get('/', (req, res) => {
     // 打開瀏覽器會出現的訊息
-    res.send('Carry');
+    res.render('home');
 });
 
 // 開始跑 app.js，並監聽指定的 PORT
