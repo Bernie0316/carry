@@ -9,6 +9,8 @@ pg
 dotenv
 --save--dev nodemon
 
+pg dotenv
+
 建立MVC架構
 controllers/
 models/
@@ -26,3 +28,11 @@ database/
 .env
 app.js
 package.json
+
+
+
+DB_HOST=localhost
+DB_PORT=5432
+DB_NAME=family_repair
+DB_USER=postgres
+DB_PASSWORD=你的PostgreSQL密碼
