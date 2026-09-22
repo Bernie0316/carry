@@ -8,6 +8,7 @@ ejs
 pg
 dotenv
 --save--dev nodemon
+express-ejs-layouts
 
 pg dotenv
 
