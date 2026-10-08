@@ -8,7 +8,11 @@ app.set('view engine', 'ejs');
 app.use(expressLayouts);
 app.set('layout', 'layouts/layout');
 
+app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public')); // 設定靜態檔案資料夾
+
+const repairRoutes = require("./routes/repairRoute");
+app.use("/repairs", repairRoutes);
 
 const PORT = process.env.PORT || 3000;
 
